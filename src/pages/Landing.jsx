@@ -8,6 +8,7 @@ import {
   Projects,
   Team,
   Testimonial,
+  VideoPlayer,
   WhatWeDo,
 } from "../containers";
 
@@ -20,6 +21,7 @@ const Landing = () => {
       </div>
       <Projects />
       <About />
+      <VideoPlayer />
       <WhatWeDo />
       <Testimonial />
       <Team />

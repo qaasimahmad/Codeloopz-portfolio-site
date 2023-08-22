@@ -62,7 +62,7 @@ const ProductCard = ({ projectName, link, bgImage }) => {
 
   const handleHoverEnd = () => {
     titleControls.start({
-      y: 120,
+      y: 100,
       opacity: 0,
     });
   };
@@ -75,9 +75,9 @@ const ProductCard = ({ projectName, link, bgImage }) => {
       onMouseLeave={handleHoverEnd}
     >
       <motion.div
-        initial={{ y: 120, opacity: 0 }}
+        // initial={{ y: 120, opacity: 0 }}
         animate={titleControls}
-        transition={{ type: "tween", duration: 0.5 }}
+        transition={{ type: "tween", duration: 0.4 }}
         className="w-fit"
       >
         <small className="text-sm md:text-base">Simple, Visual</small>

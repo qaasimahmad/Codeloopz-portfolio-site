@@ -7,7 +7,7 @@ const About = () => {
         <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[500] font-grotesk mb-5">
           About
         </h3>
-        <p className="text-sm md:text-base font-[500] leading-8">
+        <p className="text-sm md:text-base font-[500] leading-7 md:leading-8 lg:leading-9">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
           aenean pharetra magna ac. Sociis natoque penatibus et magnis dis
@@ -31,7 +31,7 @@ const About = () => {
           </ul>
         </div>
         <div>
-          <h4 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-[500] font-grotesk mb-5">
+          <h4 className="text-lg md:text-xl lg:text-2xl font-[500] font-grotesk mb-5">
             Digital design
           </h4>
           <ul className="flex flex-col gap-3 text-sm md:text-base font-[500]">

@@ -4,7 +4,7 @@ import Sherifdeen from "../assets/Sherifdeen.JPG";
 
 const Team = () => {
   return (
-    <div className="w-full container mx-auto px-5 md:px-0 lg:px-8 py-4 pb-20">
+    <div className="w-full container mx-auto px-5 md:px-0 lg:px-8 py-4 pb-32">
       <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[500] font-grotesk mb-8">
         OUR TEAM
       </h3>
