@@ -2,25 +2,35 @@ import React from "react";
 import { BsTwitter } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { LiaFacebookF } from "react-icons/lia";
-import { HiOutlineForward } from "react-icons/hi2";
+import img from "../assets/app.svg"
 
 const Header = () => {
   return (
-    <div className="w-full container mx-auto px-5 md:px-0 lg:px-8 py-36">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-grotesk font-[500] uppercase leading-[1.3] max-w-3xl">
-        "We reshape the digital landscape through innovative design and
-        projects."
-        <HiOutlineForward className="" />
+    <div className="w-full relative container mx-auto px-5 md:px-0 lg:px-8 pt-28 lg:pt-36 pb-44">
+      <h1 className="text-white text-2xl md:text-[2.5rem] lg:text-5xl font-grotesk font-[700] md:leading-[1.3] uppercase lg:leading-[1.4] tracking-[1.5px] max-w-2xl">
+        Build stunning interactive solutions{" "}
+        <span className="text-zinc-400">with our team</span>.
       </h1>
-      <div className="flex flex-col gap-6 mt-8 w-fit">
-        <p className="tracking-[1px] text-base font-[500]">
-          Let's work together!
+      <div className="flex flex-col gap-3 mt-8 w-fit">
+        <p className="tracking-[0.9px] text-gray-200 text-base font-[500]">
+          Wanna work together?
         </p>
-        <div className="flex gap-5 text-lg text-white">
-          <LiaFacebookF className="hover:scale-110 transition-all duration-300" />
-          <BsTwitter className="hover:scale-110 transition-all duration-300" />
-          <FaInstagram className="hover:scale-110 transition-all duration-300" />
+        <button className="bg-white text-base font-grotesk font-[500] py-2 px-4 rounded hover:bg-gray-200 transition-all duration-300">
+          Get started
+        </button>
+      </div>
+      <div className="hidden lg:block absolute right-0 bottom-16">
+        <p className="tracking-[0.9px] text-gray-200 text-base font-[500] mb-4">
+          Connect with us
+        </p>
+        <div className="flex gap-5 text-lg text-zinc-400">
+          <LiaFacebookF className="hover:scale-110 hover:text-white transition-all duration-300" />
+          <BsTwitter className="hover:scale-110 hover:text-white transition-all duration-300" />
+          <FaInstagram className="hover:scale-110 hover:text-white transition-all duration-300" />
         </div>
+      </div>
+      <div className="relative lg:absolute w-[350px] right-0 top-[100px]">
+        <img src={img} alt="" />
       </div>
     </div>
   );
