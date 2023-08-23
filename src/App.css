@@ -9,11 +9,12 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header_gradient {
-  background: #183D3D;
-  background: linear-gradient(0deg, #183D3D, #5C8374);
+  background: #183d3d;
+  background: linear-gradient(0deg, #183d3d, #5c8374);
 }
 
 a {
@@ -33,8 +34,8 @@ li::after {
   transition: width 0.5s ease;
 }
 
-li::after{
-  background-color: #FFF;
+li::after {
+  background-color: #fff;
 }
 
 li.active::after {
@@ -44,7 +45,7 @@ li.active::after {
   position: absolute;
   left: 0;
   bottom: -2px;
-  background-color: #FFF;
+  background-color: #fff;
   transition: width 0.5s ease;
 }
 

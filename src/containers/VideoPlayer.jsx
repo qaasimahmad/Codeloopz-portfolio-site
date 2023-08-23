@@ -14,7 +14,7 @@ const VideoPlayer = () => {
   return (
     <div style={bgStyles}>
       <div className="w-full container mx-auto px-5 md:px-0 lg:px-8 py-60 flex items-center justify-center">
-        <div className="text-white text-sm md:text-base font-[600] flex items-center gap-4 px-4 py-3 cursor-pointer hover:bg-white hover:text-black transition-all duration-500">
+        <div className="text-white flex items-center gap-4 cursor-pointer text-base font-grotesk font-[500] py-2 px-4 rounded hover:bg-white hover:text-black transition-all duration-500">
           Play video
           <FaPlay />
         </div>
