@@ -33,7 +33,7 @@ const Header = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ type: "tween", duration: 2 }}
+        transition={{ type: "tween", duration: 2, delay: 2 }}
         className="hidden lg:block absolute right-0 bottom-16"
       >
         <p className="tracking-[0.9px] text-gray-200 text-base font-[500] mb-4">
@@ -46,9 +46,9 @@ const Header = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0.3 }}
         animate={{ opacity: 1 }}
-        transition={{ type: "tween", duration: 2 }}
+        transition={{ type: "tween", duration: 2, delay: 2 }}
         className="relative lg:absolute w-[350px] right-0 top-[100px]"
       >
         <img src={img} alt="" />
