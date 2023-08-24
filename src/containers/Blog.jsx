@@ -35,7 +35,8 @@ const Blog = () => {
 const BlogCard = ({ what, link, img }) => {
   return (
     <div className="what_we_do border-x-[0.9px] border-b-[.9px] border-black relative flex flex-col">
-      <div>
+      <div className="group relative">
+        <span className="w-full h-full absolute top-0 left-0 transition-all duration-500 group-hover:bg-black group-hover:bg-opacity-30 ease-linear"></span>
         <img src={img} alt="" />
       </div>
       <div className="relative z-10 p-10">
