@@ -1,27 +1,15 @@
 import React from "react";
-import { Footer } from "../containers";
-import { GiInfinity } from "react-icons/gi";
+import { Footer, MiniNavbar } from "../containers";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
 import { bgStyles } from "../assets/constants";
 
 const Contact = () => {
-  const navigate = useNavigate();
 
   return (
     <>
-      <nav className="flex items-center justify-between py-12 px-5 md:px-9 lg:px-12 border-b-[1px] border-black">
-        <span
-          onClick={() => navigate("/")}
-          className="logo group flex items-center font-grotesk text-lg text-black hover:text-gray-200 transition-all duration-300 cursor-pointer"
-        >
-          Codel
-          <GiInfinity className="text-3xl animate-spin antialiased group-hover:animate-none" />
-          pz
-        </span>
-      </nav>
+      <MiniNavbar />
       <section className="lg:flex border-b-[1px] border-black">
         <div className="lg:basis-[55%] lg:border-r-[1px] border-black py-16 lg:py-24 px-5 md:px-10 lg:pl-20 xl:pl-40 lg:pr-5">
           <h2 className="font-grotesk font-semibold text-3xl md:text-5xl xl:text-6xl py-2 mb-8 max-w-3xl uppercase">

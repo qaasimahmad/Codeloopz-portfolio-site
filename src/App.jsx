@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Contact, Landing } from "./pages";
+import { Contact, GetInTouch, Landing } from "./pages";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Landing />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/get-in-touch" element={<GetInTouch />} />
       </Routes>
     </>
   );

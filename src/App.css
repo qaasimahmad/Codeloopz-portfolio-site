@@ -13,10 +13,9 @@ body {
 }
 
 ::selection {
-    color: white; /* Text color */
-    background-color: black; /* Highlight color */
+  color: white; /* Text color */
+  background-color: black; /* Highlight color */
 }
-
 
 .header_gradient {
   background: #183d3d;
@@ -28,6 +27,7 @@ a {
   width: fit-content;
 }
 
+.btn::after,
 a::after,
 li::after {
   content: "";
@@ -40,6 +40,11 @@ li::after {
   transition: width 0.5s ease;
 }
 
+.btn::after {
+  height: 100%;
+  left: 0;
+  bottom: 0;
+}
 li::after {
   background-color: #fff;
 }
@@ -55,6 +60,7 @@ li.active::after {
   transition: width 0.5s ease;
 }
 
+.btn:hover::after,
 a:hover::after,
 li:hover::after {
   width: 100%;
