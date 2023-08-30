@@ -21,7 +21,6 @@ const TeamMemberCard = ({ img, name, role }) => {
         <div className="flex gap-4 text-base text-black">
           <BsFacebook className="hover:scale-110 transition-all duration-300" />
           <FaInstagram className="hover:scale-110 transition-all duration-300" />
-          {/* <LuPhone className="hover:scale-110 transition-all duration-300" /> */}
           <FaEarthAfrica className="hover:scale-110 transition-all duration-300" />
           <BsTwitter className="hover:scale-110 transition-all duration-300" />
         </div>

@@ -4,8 +4,11 @@ import { FaInstagram } from "react-icons/fa";
 import { LiaFacebookF } from "react-icons/lia";
 import img from "../assets/app.svg";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full relative container mx-auto px-5 md:px-0 lg:px-8 pt-28 lg:pt-36 pb-44">
       <motion.h1
@@ -26,7 +29,10 @@ const Header = () => {
         <p className="tracking-[0.9px] text-gray-200 text-base font-[500]">
           Wanna work together?
         </p>
-        <button className="bg-white text-base font-grotesk font-[500] py-2 px-4 rounded hover:bg-gray-200 transition-all duration-300">
+        <button
+          onClick={() => navigate("/contact")}
+          className="bg-white text-base font-grotesk font-[500] py-2 px-4 rounded hover:bg-gray-200 transition-all duration-300"
+        >
           Get started
         </button>
       </motion.div>

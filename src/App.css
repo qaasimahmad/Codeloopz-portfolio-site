@@ -12,6 +12,12 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+::selection {
+    color: white; /* Text color */
+    background-color: black; /* Highlight color */
+}
+
+
 .header_gradient {
   background: #183d3d;
   background: linear-gradient(0deg, #183d3d, #5c8374);
