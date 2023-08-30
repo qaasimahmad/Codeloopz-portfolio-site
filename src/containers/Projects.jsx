@@ -70,7 +70,7 @@ const ProductCard = ({ projectName, link, bgImage }) => {
   return (
     <div
       style={bgStyles}
-      className="border-x-[0.9px] border-b-[.9px] border-black cursor-pointer p-10 pt-64"
+      className="sm:border-x-[0.9px] border-b-[.9px] border-black cursor-pointer p-10 pt-64"
       onMouseEnter={handleHoverStart}
       onMouseLeave={handleHoverEnd}
     >

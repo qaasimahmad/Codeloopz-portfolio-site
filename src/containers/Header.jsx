@@ -14,7 +14,7 @@ const Header = () => {
         transition={{ type: "tween", duration: 1 }}
         className="text-white text-2xl md:text-[2.5rem] lg:text-5xl font-grotesk font-[700] md:leading-[1.3] uppercase lg:leading-[1.4] tracking-[1.5px] max-w-2xl"
       >
-        Build stunning interactive solutions{" "}
+        Build scalable and interactive solutions{" "}
         <span className="text-zinc-400">with our team</span>.
       </motion.h1>
       <motion.div

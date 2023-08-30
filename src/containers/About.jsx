@@ -8,39 +8,36 @@ const About = () => {
           About
         </h3>
         <p className="text-sm md:text-base font-[500] leading-7 md:leading-8 lg:leading-9">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium
-          aenean pharetra magna ac. Sociis natoque penatibus et magnis dis
-          parturient montes nascetur ridiculus. Morbi leo urna molestie at
-          elementum eu facilisis. Feugiat sed lectus vestibulum mattis
-          ullamcorper velit sed ullamcorper morbi quis.
+          Welcome to CodeLoopz – where innovation meets scalability in the world
+          of technology. We're not just a tech company; we're your partners in
+          harnessing the power of cutting-edge solutions for your business. Our
+          mission is simple yet ambitious: to provide highly innovative and
+          scalable solutions that propel our customers into the future.
         </p>
       </div>
       <div className="flex-1 flex flex-col md:flex-row gap-8 md:gap-20">
         <div>
-          <h4 className="text-lg md:text-xl lg:text-2xl font-[500] font-grotesk mb-5">
+          <h4 className="text-lg md:text-xl lg:text-2xl font-[500] font-grotesk mb-5 capitalize">
             Brand identity
           </h4>
-          <ul className="flex flex-col gap-3 text-sm md:text-base font-[500]">
-            <li>– Logo development</li>
-            <li>– Brand strategy</li>
-            <li>– Corporate identities</li>
-            <li>– Modern illustrations</li>
-            <li>– Typography</li>
-            <li>– Brand guidelines</li>
+          <ul className="flex flex-col gap-3 text-sm md:text-base font-[500] capitalize">
+            <li>– cloud migration</li>
+            <li>– software and cloud architecture</li>
+            <li>– software development</li>
+            <li>– Creative design</li>
+            <li>– comprehensive IT advisory</li>
           </ul>
         </div>
         <div>
-          <h4 className="text-lg md:text-xl lg:text-2xl font-[500] font-grotesk mb-5">
-            Digital design
+          <h4 className="text-lg md:text-xl lg:text-2xl font-[500] font-grotesk mb-5 capitalize">
+            Our Mission
           </h4>
           <ul className="flex flex-col gap-3 text-sm md:text-base font-[500]">
-            <li>– UX</li>
-            <li>– Strategy</li>
-            <li>– UI design</li>
-            <li>– Web development</li>
-            <li>– Interactive prototypes</li>
-            <li>– eComerce solutions</li>
+            <li>– Innovate. Scale. Succeed.</li>
+            <li>– Crafting Excellence</li>
+            <li>– Designing the Future, Today</li>
+            <li>– Guiding Through Technology</li>
+            <li>– Pioneering Tech Boundaries</li>
           </ul>
         </div>
       </div>

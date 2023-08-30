@@ -1,6 +1,7 @@
 export { default as Navbar } from "./Navbar";
 export { default as Header } from "./Header";
 export { default as Testimonial } from "./Testimonial";
+export { default as Mission } from "./Mission";
 export { default as Team } from "./Team";
 export { default as Projects } from "./Projects";
 export { default as WhatWeDo } from "./WhatWeDo";

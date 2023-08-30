@@ -4,6 +4,7 @@ import {
   Blog,
   Footer,
   Header,
+  Mission,
   Navbar,
   Projects,
   Team,
@@ -22,6 +23,7 @@ const Landing = () => {
       <Projects />
       <About />
       <VideoPlayer />
+      <Mission />
       <WhatWeDo />
       <Testimonial />
       <Team />

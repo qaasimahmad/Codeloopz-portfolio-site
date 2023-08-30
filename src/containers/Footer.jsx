@@ -8,8 +8,9 @@ const Footer = () => {
   return (
     <div className="">
       <div className="w-full container mx-auto px-5 md:px-0 lg:px-8 my-24">
-        <h3 className="font-grotesk font-semibold text-2xl md:text-3xl lg:text-4xl py-2 my-8 max-w-2xl">
-          GIVE YOUR CREATIVITY A NEW SHAPE & FORM WITH LYNDON THEME
+        <h3 className="font-grotesk font-semibold text-2xl md:text-3xl lg:text-4xl py-2 my-8 max-w-3xl uppercase">
+          Choose CodeLoopz – where innovation, scalability, and success
+          converge.
         </h3>
         <div className="footer_links grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-4">
           <div className="flex flex-col gap-3">

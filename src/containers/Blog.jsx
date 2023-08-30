@@ -6,12 +6,12 @@ const Blog = () => {
     {
       what: "About ilustration of the year",
       link: "",
-      img: "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-Home-blog-img-01.jpg",
+      img: "https://images.unsplash.com/flagged/photo-1580234759288-fbf3ccdd9a06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzQ5fHxibGFjayUyMGFuZCUyMHdoaXRlJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
     },
     {
       what: "The best design artists 2021",
       link: "",
-      img: "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Blog-list-main-home-image-02.jpg",
+      img: "https://images.unsplash.com/photo-1611409000570-1feccae7aa75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk1fHxibGFjayUyMGFuZCUyMHdoaXRlJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
     },
     {
       what: "The Achilles heel of an artist lies in the hope that his art is only good.",
@@ -20,7 +20,7 @@ const Blog = () => {
     {
       what: "Two key steps in logo design",
       link: "",
-      img: "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-Home-blog-img-01.jpg",
+      img: "https://images.unsplash.com/photo-1506899689252-707a63f4c766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU2fHxibGFjayUyMGFuZCUyMHdoaXRlJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
     },
   ];
   return (
@@ -34,7 +34,7 @@ const Blog = () => {
 
 const BlogCard = ({ what, link, img }) => {
   return (
-    <div className="what_we_do border-x-[0.9px] border-b-[.9px] border-black relative flex flex-col">
+    <div className="what_we_do sm:border-x-[0.9px] border-b-[.9px] border-black relative flex flex-col">
       <div className="group relative">
         <span className="w-full h-full absolute top-0 left-0 transition-all duration-500 group-hover:bg-black group-hover:bg-opacity-30 ease-linear"></span>
         <img src={img} alt="" />
