@@ -13,21 +13,25 @@ const Team = () => {
           img="https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/team-img-1.jpg"
           name="Siana Brook"
           role="UI Designer"
+          link="/team-member"
         />
         <TeamMemberCard
           img={Sherifdeen}
           name="Sherifdeen Ishola"
           role="Frontend Developer"
+          link="/team-member"
         />
         <TeamMemberCard
           img="https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/team-img-3.jpg"
           name="Marco Sykes"
           role="Web Developer"
+          link="/team-member"
         />
         <TeamMemberCard
           img="https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/team-img-2.jpg"
           name="Tashan Glass"
           role="Web Developer"
+          link="/team-member"
         />
       </div>
     </div>

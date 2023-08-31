@@ -3,14 +3,18 @@ import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
-const TeamMemberCard = ({ img, name, role }) => {
+const TeamMemberCard = ({ img, name, role, link }) => {
+  const navigate = useNavigate();
+
   return (
     <motion.div
       initial={{ scale: 1 }}
       whileHover={{ scale: 1.08 }}
       transition={{ type: "tween", duration: 1 }}
       className="mb-8 lg:mb-0"
+      onClick={() => navigate(link)}
     >
       <div className="h-auto">
         <img className="w-full h-full" src={img} alt="" />
