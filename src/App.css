@@ -94,6 +94,10 @@ li:hover::after {
   transition: transform 0.3s ease;
 }
 
+.miniNav .bar{
+  background-color: #000;
+}
+
 .bar.bar1 {
   top: 0;
   right: 0;

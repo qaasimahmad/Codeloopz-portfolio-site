@@ -14,14 +14,18 @@ const TeamMemberCard = ({ img, name, role, link }) => {
       whileHover={{ scale: 1.08 }}
       transition={{ type: "tween", duration: 1 }}
       className="mb-8 lg:mb-0"
-      onClick={() => navigate(link)}
     >
-      <div className="h-auto">
+      <div onClick={() => navigate(link)} className="h-auto cursor-pointer">
         <img className="w-full h-full" src={img} alt="" />
       </div>
       <div className="mt-5">
         <p className="mb-1 text-base">{role}</p>
-        <h6 className="mb-4 text-xl font-[500] font-grotesk">{name}</h6>
+        <h6
+          onClick={() => navigate(link)}
+          className="mb-4 text-xl font-[500] font-grotesk cursor-pointer"
+        >
+          {name}
+        </h6>
         <div className="flex gap-4 text-base text-black">
           <BsFacebook className="hover:scale-110 transition-all duration-300" />
           <FaInstagram className="hover:scale-110 transition-all duration-300" />
