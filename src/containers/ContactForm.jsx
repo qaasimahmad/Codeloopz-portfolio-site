@@ -5,17 +5,17 @@ const ContactForm = () => {
     <div className="w-full container mx-auto px-5 md:px-0 lg:px-8 py-28">
       <form className="max-w-2xl mx-auto" action="">
         <input
-          className="block w-full border-[1px] border-b-0 border-black py-6 md:px-8 outline-none text-sm font-openSans placeholder:text-black"
+          className="block w-full border-[1px] border-b-0 border-black py-6 px-4 md:px-8 outline-none text-sm font-openSans placeholder:text-black"
           placeholder="Your name *"
           type="text"
         />
         <input
-          className="block w-full border-[1px] border-black py-6 px-8 outline-none text-sm font-openSans placeholder:text-black"
+          className="block w-full border-[1px] border-black py-6 px-4 md:px-8 outline-none text-sm font-openSans placeholder:text-black"
           placeholder="Your email *"
           type="text"
         />
         <textarea
-          className="block w-full border-[1px] border-t-0 border-black py-6 px-8 outline-none text-sm font-openSans placeholder:text-black"
+          className="block w-full border-[1px] border-t-0 border-black py-6 px-4 md:px-8 outline-none text-sm font-openSans placeholder:text-black"
           name=""
           id=""
           cols="30"
