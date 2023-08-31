@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
-import boogie from "../assets/Sherifdeen.jpg"
+import boogie from "../assets/Sherifdeen.JPG"
 
 const TeamMember = () => {
   return (
