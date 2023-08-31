@@ -8,7 +8,7 @@ const TeamMemberCard = ({ img, name, role }) => {
   return (
     <motion.div
       initial={{ scale: 1 }}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.08 }}
       transition={{ type: "tween", duration: 1 }}
       className="mb-8 lg:mb-0"
     >

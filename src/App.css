@@ -45,8 +45,13 @@ li::after {
   left: 0;
   bottom: 0;
 }
+
 li::after {
   background-color: #fff;
+}
+
+ol li::after {
+  background-color: #000;
 }
 
 li.active::after {
@@ -58,6 +63,10 @@ li.active::after {
   bottom: -2px;
   background-color: #fff;
   transition: width 0.5s ease;
+}
+
+ol li.active::after {
+  background-color: #000;
 }
 
 .btn:hover::after,
@@ -74,6 +83,53 @@ li:hover::after {
 .what_we_do:hover::after {
   width: 0;
 }
+
+/* Default styles for the bars */
+.bar {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Styles for the first bar in closed state */
+.bar.bar1 {
+    top: 0; /* Position the first bar at the top */
+    transform: translateY(0);
+}
+
+/* Styles for the second bar in closed state */
+.bar.bar2 {
+    bottom: 0; /* Position the second bar at the bottom */
+    transform: translateY(0);
+}
+
+.bar.bar-space {
+    position: absolute;
+    height: 50%; /* Adjust height for the space */
+    width: 100%;
+    top: 25%; /* Adjust position to center the space */
+    background-color: transparent; /* Hide the space */
+}
+
+.opened .bar.bar-space {
+  display: none;
+}
+
+.opened .bar.bar1 {
+    transform: translateY(50%) rotate(45deg);
+    background-color: #000;
+    top: 5px;
+}
+
+.opened .bar.bar2 {
+    transform: translateY(-50%) rotate(-45deg);
+    background-color: #000;
+    bottom: 5px;
+}
+
 
 /* swiper  */
 .testimonial .swiper {
