@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }

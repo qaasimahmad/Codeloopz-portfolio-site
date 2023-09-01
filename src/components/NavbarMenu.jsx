@@ -5,13 +5,12 @@ const NavbarMenu = () => {
   // Menu items data
   const menu = [
     { name: "home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "services", link: "/services" },
+    { name: "About", link: "#about" },
+    { name: "services", link: "#services" },
     { name: "Gallery", link: "/gallery" },
-    { name: "blog", link: "/blog" },
+    { name: "blog", link: "#blog" },
   ];
 
-  // Determine if the screen is small
   const screenWidth = window.innerWidth;
   const smallScreen = screenWidth < 640;
 

@@ -9,10 +9,8 @@ const Navbar = () => {
   const navigate = useNavigate();
   const menu = [
     { name: "home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "services", link: "/services" },
-    { name: "Gallery", link: "/gallery" },
-    { name: "blog", link: "/blog" },
+    { name: "Our Mission", link: "/get-in-touch" },
+    { name: "Contact us", link: "/contact" },
   ];
 
   const [isNavMenuOpened, setIsNavMenuOpened] = useState(false);
@@ -30,6 +28,7 @@ const Navbar = () => {
             {menu.map((m, i) => (
               <li
                 key={m.name + i}
+                onClick={() => navigate(m.link)}
                 className={`uppercase text-[12px] relative cursor-pointer tracking-[1px] text-gray-100 font-nunito font-[500] ${
                   m.link === location.pathname && "active text-white"
                 }`}
@@ -42,7 +41,9 @@ const Navbar = () => {
         <div
           onClick={() => setIsNavMenuOpened(!isNavMenuOpened)}
           className={`w-10 h-3.5 block lg:hidden cursor-pointer z-[150] ${
-            isNavMenuOpened ? "opened fixed top-14 right-5 md:top-14 md:right-9" : "relative"
+            isNavMenuOpened
+              ? "opened fixed top-14 right-5 md:top-14 md:right-9"
+              : "relative"
           }`}
         >
           <span className="bar bar1"></span>
