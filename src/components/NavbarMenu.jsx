@@ -1,16 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
-const NavbarMenu = () => {
-  // Menu items data
-  const menu = [
-    { name: "home", link: "/" },
-    { name: "About", link: "#about" },
-    { name: "services", link: "#services" },
-    { name: "Gallery", link: "/gallery" },
-    { name: "blog", link: "#blog" },
-  ];
-
+const NavbarMenu = ({ menu }) => {
+  const navigate = useNavigate();
   const screenWidth = window.innerWidth;
   const smallScreen = screenWidth < 640;
 
@@ -37,11 +30,12 @@ const NavbarMenu = () => {
         {menu.map((m, i) => (
           <li
             key={m.name + i}
+            onClick={() => navigate(m.link)}
             className={`uppercase text-[12px] p-4 relative cursor-pointer tracking-[1px] text-black font-nunito font-[500] ${
               m.link === location.pathname && "active"
             }`}
           >
-            <a href={m.link}>{m.name}</a>
+            {m.name}
           </li>
         ))}
       </ol>

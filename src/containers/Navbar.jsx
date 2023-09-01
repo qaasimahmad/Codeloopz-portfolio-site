@@ -60,7 +60,7 @@ const Navbar = () => {
       </nav>
       <AnimatePresence>
         {isNavMenuOpened && (
-          <NavbarMenu setIsNavMenuOpened={setIsNavMenuOpened} />
+          <NavbarMenu menu={menu} setIsNavMenuOpened={setIsNavMenuOpened} />
         )}
       </AnimatePresence>
     </>
