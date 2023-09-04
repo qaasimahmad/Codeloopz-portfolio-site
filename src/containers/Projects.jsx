@@ -1,20 +1,11 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
+import garlandMain from "../assets/garland-main.png";
 
 const Projects = () => {
   const projectsDetail = [
     {
-      name: "3D Illustrations",
-      bgImage:
-        "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-home-portfolio-list-img-03.jpg",
-    },
-    {
       name: "The Garland Realty",
-      bgImage:
-        "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-home-portfolio-list-img-04.jpg",
-    },
-    {
-      name: "3D Illustrations",
       bgImage:
         "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-home-portfolio-list-img-04.jpg",
     },

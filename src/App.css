@@ -95,7 +95,7 @@ li:hover::after {
   transition: transform 0.3s ease;
 }
 
-.miniNav .bar{
+.miniNav .bar {
   background-color: #000;
 }
 
@@ -127,14 +127,14 @@ li:hover::after {
 
 .opened .bar.bar1 {
   transform: translateY(50%) rotate(45deg);
-  background-color: #000;
+  /* background-color: #000; */
   top: 5px;
   width: 100%;
 }
 
 .opened .bar.bar2 {
   transform: translateY(-50%) rotate(-45deg);
-  background-color: #000;
+  /* background-color: #000; */
   bottom: 5px;
   width: 100%;
 }
