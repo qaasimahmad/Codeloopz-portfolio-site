@@ -30,7 +30,7 @@ a {
 
 .btn::after,
 a::after,
-li::after {
+nav li::after {
   content: "";
   width: 0;
   height: 1.5px;
@@ -47,7 +47,7 @@ li::after {
   bottom: 0;
 }
 
-li::after {
+nav li::after {
   background-color: #fff;
 }
 
@@ -55,7 +55,7 @@ ol li::after {
   background-color: #000;
 }
 
-li.active::after {
+nav li.active::after {
   content: "";
   width: 100%;
   height: 1.5px;
@@ -72,7 +72,7 @@ ol li.active::after {
 
 .btn:hover::after,
 a:hover::after,
-li:hover::after {
+nav li:hover::after {
   width: 100%;
 }
 

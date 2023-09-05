@@ -1,10 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const NavbarMenu = ({ menu }) => {
+const NavbarMenu = () => {
   const screenWidth = window.innerWidth;
   const smallScreen = screenWidth < 640;
+
+  const menu = [
+    { name: "Home", link: "/" },
+    { name: "Our Mission", link: "/get-in-touch" },
+    { name: "Get in touch", link: "/get-in-touch" },
+    { name: "Contact us", link: "/contact" },
+  ];
 
   return (
     <motion.div
@@ -30,7 +37,7 @@ const NavbarMenu = ({ menu }) => {
           <Link
             key={i}
             to={m.link}
-            className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit hover:transform hover:-translate-x-2 transition-all duration-300"
+            className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit hover:transform hover:-translate-x-2 transition-all duration-300 capitalize"
           >
             {m.name}
           </Link>

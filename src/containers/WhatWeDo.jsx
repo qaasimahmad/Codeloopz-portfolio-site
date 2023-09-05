@@ -1,5 +1,5 @@
 import React from "react";
-import { GoArrowUpRight } from "react-icons/go";
+import { GrTechnology } from "react-icons/gr";
 
 const WhatWeDo = () => {
   const whatWeDo = [
@@ -51,11 +51,11 @@ const WhatWeDoCard = ({ what, link, bgImg }) => {
       className="what_we_do sm:border-x-[0.9px] border-b-[.9px] border-black p-10 pt-56 relative flex items-end after:bg-white after:w-full after:h-full after:absolute after:top-0 after:left-0 cursor-default"
     >
       <div className="relative z-10">
-        <small className="text-sm md:text-base">Advisory, Tech Solutions</small>
+        <small className="text-sm md:text-[15px] font-[500]">Advisory, Tech Solutions</small>
         <h3 className="text-xl md:text-2xl font-grotesk font-[500] mb-4 mt-2 capitalize">
           {what}
         </h3>
-        <GoArrowUpRight fontWeight={10} className="text-5xl" />
+        <GrTechnology color="#5c8374" className="text-4xl" />
       </div>
     </div>
   );

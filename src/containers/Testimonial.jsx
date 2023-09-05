@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { BiSolidQuoteRight } from "react-icons/bi";
 
 // Import Swiper styles
 import "swiper/css";
@@ -36,7 +37,10 @@ const Testimonial = () => {
 
   return (
     <div className="testimonial w-full container mx-auto px-5 md:px-0 lg:px-8 py-28 flex flex-col gap-10">
-      <div className="w-10 md:w-14 lg:w-20 text-center mx-auto">
+      <div className="mx-auto">
+        <BiSolidQuoteRight size={50} />
+      </div>
+      {/* <div className="w-10 md:w-14 lg:w-20 text-center mx-auto">
         <svg
           clip-rule="evenodd"
           fill-rule="evenodd"
@@ -51,7 +55,7 @@ const Testimonial = () => {
             fill-rule="nonzero"
           />
         </svg>
-      </div>
+      </div> */}
       <div className="relative">
         <Swiper
           modules={[Navigation, Pagination]}

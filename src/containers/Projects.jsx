@@ -42,6 +42,8 @@ const ProductCard = ({ projectName, link, bgImage }) => {
     maxWidth: "100%",
   };
 
+  const screenWidth = window.innerWidth;
+  const smallScreen = screenWidth < 640;
   const titleControls = useAnimation();
 
   const handleHoverStart = () => {
@@ -53,7 +55,7 @@ const ProductCard = ({ projectName, link, bgImage }) => {
 
   const handleHoverEnd = () => {
     titleControls.start({
-      y: 120,
+      y: 40,
       opacity: 0,
     });
   };
@@ -66,12 +68,28 @@ const ProductCard = ({ projectName, link, bgImage }) => {
       onMouseLeave={handleHoverEnd}
     >
       <motion.div
-        initial={{ y: 120, opacity: 0 }}
-        animate={titleControls}
-        transition={{ type: "tween", duration: 0.5 }}
+        initial={
+          smallScreen
+            ? {
+                y: 0,
+                opacity: 1,
+              }
+            : { y: 40, opacity: 0 }
+        }
+        animate={
+          smallScreen
+            ? {
+                y: 0,
+                opacity: 1,
+              }
+            : titleControls
+        }
+        transition={{ type: "tween", duration: 0.3 }}
         className="w-fit"
       >
-        <small className="text-sm md:text-base">Simple, Visual</small>
+        <small className="text-sm md:text-[15px] font-[500]">
+          Tech Solution
+        </small>
         <h3 className="text-xl md:text-2xl font-grotesk font-[500] mb-4 mt-2 capitalize">
           {projectName}
         </h3>

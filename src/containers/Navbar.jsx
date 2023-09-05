@@ -7,6 +7,8 @@ import { AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const screenWidth = window.innerWidth;
+  const smallScreen = screenWidth < 640;
   const menu = [
     { name: "Home", link: "/" },
     { name: "Our Mission", link: "/get-in-touch" },
@@ -21,7 +23,7 @@ const Navbar = () => {
         <div className="flex items-center gap-28">
           <span
             className={`logo relative z-[150] group flex items-center font-grotesk text-lg ${
-              isNavMenuOpened
+              isNavMenuOpened && smallScreen
                 ? "text-[#183d3d]"
                 : "text-white hover:text-gray-200"
             } transition-all duration-300 cursor-pointer`}
@@ -56,7 +58,7 @@ const Navbar = () => {
         </button>
       </nav>
       <AnimatePresence>
-        {isNavMenuOpened && <NavbarMenu menu={menu} />}
+        {isNavMenuOpened && <NavbarMenu />}
       </AnimatePresence>
     </>
   );
