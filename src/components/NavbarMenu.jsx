@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const NavbarMenu = () => {
   const screenWidth = window.innerWidth;
   const smallScreen = screenWidth < 640;
+  const location = useLocation();
 
   const menu = [
     { name: "Home", link: "/" },
@@ -30,7 +31,9 @@ const NavbarMenu = () => {
       }
       exit={smallScreen ? { opacity: 0 } : { scaleX: 0, scaleY: 0, opacity: 0 }}
       transition={{ type: "tween", duration: 0.3 }}
-      className="fixed lg:hidden right-0 top-0 sm:right-3 sm:top-6 bg-white w-full sm:w-[350px] h-screen sm:h-auto p-14 sm:p-10 md:p-12 pt-40 sm:pt-16 z-[100] shadow-sm shadow-black"
+      className={`fixed ${
+        location.pathname === "/" && "lg:hidden"
+      } right-0 top-0 sm:right-3 sm:top-6 bg-white w-full sm:w-[350px] h-screen sm:h-auto p-14 sm:p-10 md:p-12 pt-40 sm:pt-16 z-[100] shadow-sm shadow-black`}
     >
       <div className="flex flex-col gap-4 mb-20 sm:mb-8">
         {menu.map((m, i) => (

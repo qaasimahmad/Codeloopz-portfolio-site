@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import garlandMain from "../assets/garland-main.png";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
   const projectsDetail = [
@@ -42,6 +43,8 @@ const ProductCard = ({ projectName, link, bgImage }) => {
     maxWidth: "100%",
   };
 
+  const navigate = useNavigate();
+
   const screenWidth = window.innerWidth;
   const smallScreen = screenWidth < 640;
   const titleControls = useAnimation();
@@ -66,6 +69,7 @@ const ProductCard = ({ projectName, link, bgImage }) => {
       className="sm:border-x-[0.9px] border-b-[.9px] border-black cursor-pointer p-10 pt-64"
       onMouseEnter={handleHoverStart}
       onMouseLeave={handleHoverEnd}
+      onClick={() => navigate("/project")}
     >
       <motion.div
         initial={
@@ -90,7 +94,10 @@ const ProductCard = ({ projectName, link, bgImage }) => {
         <small className="text-sm md:text-[15px] font-[500]">
           Tech Solution
         </small>
-        <h3 className="text-xl md:text-2xl font-grotesk font-[500] mb-4 mt-2 capitalize">
+        <h3
+          onClick={() => navigate("/project")}
+          className="text-xl md:text-2xl font-grotesk font-[500] mb-4 mt-2 capitalize"
+        >
           {projectName}
         </h3>
       </motion.div>
