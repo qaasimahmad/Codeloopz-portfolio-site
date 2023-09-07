@@ -22,17 +22,17 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-3">
-            <Link>Services</Link>
-            <Link>About</Link>
-            <Link>Gallery</Link>
+            <Link to="/">Home</Link>
+            <Link to="/get-in-touch">Get In Touch</Link>
+            <Link to="/contact">Contact Us</Link>
           </div>
           <div className="flex flex-col gap-3">
             <p>Neal St, London WC2H 9PR United Kingdom</p>
-            <p>00 (035) 244 583 265</p>
+            <p>+234 806 079 2402</p>
           </div>
           <div className="flex flex-col gap-3">
             <p>Let's work together!</p>
-            <Link>lyndon@qodeinteractive.com</Link>
+            <Link to="mailto:admin@codeloopz.com">admin@codeloopz.com</Link>
           </div>
         </div>
       </div>

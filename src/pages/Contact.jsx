@@ -4,9 +4,9 @@ import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
 import { bgStyles } from "../assets/constants";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
-
   return (
     <>
       <MiniNavbar />
@@ -22,7 +22,7 @@ const Contact = () => {
               </h3>
               <div className="flex flex-col gap-2 max-w-[230px]">
                 <p className="">8 Homecroft Rd, SE26 5QG, United Kingdom</p>
-                <p className="">669 45 49 574</p>
+                <p className="">+234 806 079 2402</p>
               </div>
             </div>
             <div className="flex-1">
@@ -39,11 +39,15 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-0">
             <div className="flex-1">
               <h3 className="text-lg lg:text-xl font-[500] font-grotesk mb-3 capitalize">
-                Doriany Jackson
+                Kassim(jnr) Eshemogie
               </h3>
               <div className="flex flex-col gap-2 max-w-[230px]">
                 <p className="">Team Lead</p>
-                <p className="">lyndon1@qodeinteractive.com</p>
+                <p className="">
+                  <Link to="mailto:admin@codeloopz.com">
+                    admin@codeloopz.com
+                  </Link>
+                </p>
                 <div className="flex gap-4 text-base text-black mt-2">
                   <BsFacebook className="hover:scale-110 transition-all duration-300" />
                   <FaInstagram className="hover:scale-110 transition-all duration-300" />
@@ -58,7 +62,11 @@ const Contact = () => {
               </h3>
               <div className="flex flex-col gap-2 max-w-[230px]">
                 <p className="">Team Member</p>
-                <p className="">lyndon1@qodeinteractive.com</p>
+                <p className="">
+                  <Link to="mailto:isholasherifdeen@gmail.com">
+                    isholasherifdeen@gmail.com
+                  </Link>
+                </p>
                 <div className="flex gap-4 text-base text-black mt-2">
                   <BsFacebook className="hover:scale-110 transition-all duration-300" />
                   <FaInstagram className="hover:scale-110 transition-all duration-300" />

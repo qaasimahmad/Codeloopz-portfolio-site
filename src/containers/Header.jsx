@@ -14,7 +14,7 @@ const Header = () => {
       <motion.h1
         initial={{ x: -200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "tween", duration: 1 }}
+        transition={{ type: "tween", duration: 0.5 }}
         className="text-white text-2xl md:text-[2.5rem] lg:text-5xl font-grotesk font-[700] md:leading-[1.3] uppercase lg:leading-[1.4] tracking-[1.5px] max-w-2xl"
       >
         Build scalable and interactive solutions{" "}
@@ -23,7 +23,7 @@ const Header = () => {
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "tween", duration: 1, delay: 1 }}
+        transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
         className="flex flex-col gap-3 mt-8 w-fit"
       >
         <p className="tracking-[0.9px] text-gray-200 text-base font-[500]">
@@ -39,7 +39,7 @@ const Header = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ type: "tween", duration: 2, delay: 2 }}
+        transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
         className="hidden lg:block absolute right-0 bottom-16"
       >
         <p className="tracking-[0.9px] text-gray-200 text-base font-[500] mb-4">
@@ -52,9 +52,9 @@ const Header = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0.3 }}
+        initial={{ opacity: 0.5 }}
         animate={{ opacity: 1 }}
-        transition={{ type: "tween", duration: 2, delay: 2 }}
+        transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
         className="relative lg:absolute w-[350px] right-0 top-[100px]"
       >
         <img src={img} alt="" />

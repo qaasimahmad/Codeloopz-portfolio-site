@@ -4,6 +4,7 @@ import { bgStyles } from "../assets/constants";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { FaEarthAfrica } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const GetInTouch = () => {
   return (
@@ -25,12 +26,12 @@ const GetInTouch = () => {
         ></div>
         <div className="basis-1/2 lg:basis-1/3 md:border-r-[.9px] border-black text-center py-16">
           <h3 className="text-lg lg:text-xl font-[500] font-grotesk mb-3 capitalize">
-            Doriany Jackson
+            Kassim(jnr) Eshemogie
           </h3>
           <div className="flex flex-col gap-2">
             <p className="">Team Lead</p>
             <p>
-              <a className="">lyndon1@qodeinteractive.com</a>
+              <Link to="mailto:admin@codeloopz.com">admin@codeloopz.com</Link>
             </p>
             <div className="flex gap-4 text-base text-black mt-2 mx-auto">
               <BsFacebook className="hover:scale-110 transition-all duration-300" />
