@@ -2,7 +2,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div className="w-full container mx-auto px-5 md:px-0 lg:px-8 py-28">
+    <div id="mission" className="w-full container mx-auto px-5 md:px-0 lg:px-8 py-28">
       <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[500] font-grotesk mb-8">
         OUR MISSION
       </h3>
