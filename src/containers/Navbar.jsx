@@ -11,7 +11,7 @@ const Navbar = () => {
   const smallScreen = screenWidth < 640;
   const menu = [
     { name: "Home", link: "/" },
-    { name: "Our Mission", link: "/#mission" },
+    { name: "Our Mission", link: "/get-in-touch" },
     { name: "Contact us", link: "/contact" },
   ];
 
@@ -57,7 +57,9 @@ const Navbar = () => {
           Get in touch
         </button>
       </nav>
-      <AnimatePresence>{isNavMenuOpened && <NavbarMenu />}</AnimatePresence>
+      <AnimatePresence>
+        {isNavMenuOpened && <NavbarMenu />}
+      </AnimatePresence>
     </>
   );
 };
