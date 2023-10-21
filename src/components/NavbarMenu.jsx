@@ -9,7 +9,7 @@ const NavbarMenu = () => {
 
   const menu = [
     { name: "Home", link: "/" },
-    { name: "Our Mission", link: "/get-in-touch" },
+    // { name: "Our Mission", link: "/get-in-touch" },
     { name: "Get in touch", link: "/get-in-touch" },
     { name: "Contact us", link: "/contact" },
   ];
@@ -40,7 +40,7 @@ const NavbarMenu = () => {
           <Link
             key={i}
             to={m.link}
-            className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit hover:transform hover:-translate-x-2 transition-all duration-300 capitalize"
+            className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit capitalize"
           >
             {m.name}
           </Link>
@@ -51,13 +51,13 @@ const NavbarMenu = () => {
           SAY HELLO
         </h4>
         <Link
-          className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit hover:transform hover:-translate-x-2 transition-all duration-300"
+          className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit"
           to="mailto:isholasherifdeen@gmail.com"
         >
           lyndon@qodeinteractive.com
         </Link>
         <Link
-          className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit hover:transform hover:-translate-x-2 transition-all duration-300"
+          className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit"
           to="mailto:isholasherifdeen@gmail.com"
         >
           t.me/codeloopz

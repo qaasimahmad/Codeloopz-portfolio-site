@@ -11,7 +11,11 @@ const Navbar = () => {
   const smallScreen = screenWidth < 640;
   const menu = [
     { name: "Home", link: "/" },
-    { name: "Our Mission", link: "/get-in-touch" },
+    {
+      name: "Our Mission",
+      link: `${window.location.origin}#mission`,
+      externalLink: true,
+    },
     { name: "Contact us", link: "/contact" },
   ];
 
@@ -36,7 +40,13 @@ const Navbar = () => {
             {menu.map((m, i) => (
               <li
                 key={m.name + i}
-                onClick={() => navigate(m.link)}
+                onClick={() => {
+                  if (m.externalLink) {
+                    window.location.href = m.link;
+                  } else {
+                    navigate(m.link);
+                  }
+                }}
                 className={`uppercase text-[12px] relative cursor-pointer tracking-[1px] text-gray-100 font-nunito font-[500] ${
                   m.link === location.pathname && "active text-white"
                 }`}
@@ -57,9 +67,7 @@ const Navbar = () => {
           Get in touch
         </button>
       </nav>
-      <AnimatePresence>
-        {isNavMenuOpened && <NavbarMenu />}
-      </AnimatePresence>
+      <AnimatePresence>{isNavMenuOpened && <NavbarMenu />}</AnimatePresence>
     </>
   );
 };
