@@ -1,6 +1,5 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import garlandMain from "../assets/garland-main.png";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
@@ -9,11 +8,13 @@ const Projects = () => {
       name: "The Garland Realty",
       bgImage:
         "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-home-portfolio-list-img-04.jpg",
+      projectLink: "/project/thegarlandrealty",
     },
     {
-      name: "POS.com",
+      name: "Posxena",
       bgImage:
         "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-home-portfolio-list-img-03.jpg",
+      projectLink: "/project/posxena",
     },
   ];
 
@@ -24,6 +25,7 @@ const Projects = () => {
           key={i}
           projectName={project.name}
           bgImage={project.bgImage}
+          link={project.projectLink}
         />
       ))}
     </div>
@@ -69,7 +71,7 @@ const ProductCard = ({ projectName, link, bgImage }) => {
       className="sm:border-x-[0.9px] border-b-[.9px] border-black cursor-pointer p-10 pt-64"
       onMouseEnter={handleHoverStart}
       onMouseLeave={handleHoverEnd}
-      onClick={() => navigate("/project")}
+      onClick={() => navigate(link)}
     >
       <motion.div
         initial={
@@ -95,7 +97,7 @@ const ProductCard = ({ projectName, link, bgImage }) => {
           Tech Solution
         </small>
         <h3
-          onClick={() => navigate("/project")}
+          onClick={() => navigate(link)}
           className="text-xl md:text-2xl font-grotesk font-[500] mb-4 mt-2 capitalize"
         >
           {projectName}
