@@ -1,6 +1,7 @@
 import React from "react";
 import { TeamMemberCard } from "../components";
 import Sherifdeen from "../assets/Sherifdeen.JPG";
+import kazeem from "../assets/kazeem.jpeg";
 
 const Team = () => {
   return (
@@ -10,7 +11,7 @@ const Team = () => {
       </h3>
       <div className="team_members grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <TeamMemberCard
-          img="https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/team-img-1.jpg"
+          img={kazeem}
           name="Kassim(Jnr) Eshemogie"
           role="Backend Developer"
           link="/team-member/kassim"

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Contact, GetInTouch, Landing, Project, TeamMember } from "./pages";
 import boogie from "./assets/Sherifdeen.JPG";
+import kazeem from "./assets/kazeem.jpeg";
 import garland from "./assets/garland-main.png";
 import pos from "./assets/pos-main.png";
 
@@ -17,7 +18,7 @@ function App() {
           path="/team-member/kassim"
           element={
             <TeamMember
-              img="https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/team-img-1.jpg"
+              img={kazeem}
               heading="Hi, My name is Alhaji Qaasim, I take delight in taking your ideas from  your mind to the market place."
               portfolioLink="http://kass-portfolio.s3-website.us-east-2.amazonaws.com"
               instagram="https://instagram.com/qaasim_ahmad?igshid=MzNlNGNkZWQ4Mg=="
