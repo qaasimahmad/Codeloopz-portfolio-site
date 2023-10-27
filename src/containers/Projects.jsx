@@ -7,13 +7,13 @@ const Projects = () => {
     {
       name: "The Garland Realty",
       bgImage:
-        "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-home-portfolio-list-img-04.jpg",
+        "https://images.unsplash.com/photo-1617713964959-d9a36bbc7b52?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVhbCUyMGVzdGF0ZSUyMGFwcCUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D",
       projectLink: "/project/thegarlandrealty",
     },
     {
       name: "Posxena",
       bgImage:
-        "https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/Main-home-portfolio-list-img-03.jpg",
+        "https://images.unsplash.com/photo-1566830791071-da20cbdb2f35?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHJlYWwlMjBlc3RhdGUlMjBhcHAlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D",
       projectLink: "/project/posxena",
     },
   ];
@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 border-y-[.9px] border-black">
       {projectsDetail.map((project, i) => (
-        <ProductCard
+        <ProjectCard
           key={i}
           projectName={project.name}
           bgImage={project.bgImage}
@@ -32,7 +32,7 @@ const Projects = () => {
   );
 };
 
-const ProductCard = ({ projectName, link, bgImage }) => {
+const ProjectCard = ({ projectName, link, bgImage }) => {
   const bgStyles = {
     backgroundImage: `url(${bgImage})`,
     width: "100%",
@@ -68,7 +68,7 @@ const ProductCard = ({ projectName, link, bgImage }) => {
   return (
     <div
       style={bgStyles}
-      className="sm:border-x-[0.9px] border-b-[.9px] border-black cursor-pointer p-10 pt-64"
+      className="sm:border-x-[0.9px] border-b-[.9px] border-black cursor-pointer px-5 py-10 pt-64 md:p-10 md:pt-64"
       onMouseEnter={handleHoverStart}
       onMouseLeave={handleHoverEnd}
       onClick={() => navigate(link)}

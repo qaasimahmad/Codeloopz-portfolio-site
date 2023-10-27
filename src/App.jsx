@@ -18,7 +18,9 @@ function App() {
           element={
             <TeamMember
               img="https://lyndon.qodeinteractive.com/wp-content/uploads/2021/11/team-img-1.jpg"
-              heading="HI I'M Kassim(Jnr), Developer IN Edo. CONTACT ME!"
+              heading="Hi, My name is Alhaji Qaasim, I take delight in taking your ideas from  your mind to the market place."
+              portfolioLink="http://kass-portfolio.s3-website.us-east-2.amazonaws.com"
+              instagram="https://instagram.com/qaasim_ahmad?igshid=MzNlNGNkZWQ4Mg=="
             />
           }
         />
@@ -31,7 +33,7 @@ function App() {
               heading="HI I'M Sherifdeen, Developer IN Lagos. I like to craft solid and
             scalable frontend products with great user experiences. CONTACT ME!"
               link="isholasherifdeen@gmail.com"
-              facebook="https://www.facebook.com/sherifdeen.ishola.3"
+              facebook="https://www.facebook.com/boogiedml"
               instagram="https://www.instagram.com/boogiedml"
               portfolioLink="https://boogiedml.onrender.com/"
               twitter="https://www.twitter.com/boogiedml"

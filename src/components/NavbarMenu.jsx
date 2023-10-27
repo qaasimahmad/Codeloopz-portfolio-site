@@ -52,27 +52,27 @@ const NavbarMenu = () => {
         </h4>
         <Link
           className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit"
-          to="mailto:isholasherifdeen@gmail.com"
+          to="mailto:admin@codeloopz.com"
         >
-          lyndon@qodeinteractive.com
+          admin@codeloopz.com
         </Link>
         <Link
           className="text-lg sm:text-base font-[400] relative cursor-pointer tracking-[1px] w-fit"
-          to="mailto:isholasherifdeen@gmail.com"
+          to="mailto:admin@codeloopz.com"
         >
           t.me/codeloopz
         </Link>
         <div className="text-lg sm:text-[15px] text-[#183d3d] dark:text-[#9A9A9A] font-outfit flex gap-10 mt-20 sm:mt-8">
           <a
             className="hover:transform hover:-translate-y-0.5 transition-all duration-300"
-            href="https://twitter.com/boogiedml"
+            href=""
             target="_blank"
           >
             TW
           </a>
           <a
             className="hover:transform hover:-translate-y-0.5 transition-all duration-300"
-            href="https://github.com/boogiedml"
+            href=""
             target="_blank"
           >
             GH
@@ -86,7 +86,7 @@ const NavbarMenu = () => {
           </a>
           <a
             className="hover:transform hover:-translate-y-0.5 transition-all duration-300"
-            href="https://www.instagram.com/boogiedml/"
+            href=""
             target="_blank"
           >
             IG

@@ -21,7 +21,9 @@ const Contact = () => {
                 Direct contact
               </h3>
               <div className="flex flex-col gap-2 max-w-[230px]">
-                <p className="">8 Homecroft Rd, SE26 5QG, United Kingdom</p>
+                <p className="">
+                  8th floor, Edostate secretariat, Edo, Nigeria
+                </p>
                 <p className="">+234 806 079 2402</p>
               </div>
             </div>

@@ -14,12 +14,18 @@ const Team = () => {
           name="Kassim(Jnr) Eshemogie"
           role="Backend Developer"
           link="/team-member/kassim"
+          portfolioLink="http://kass-portfolio.s3-website.us-east-2.amazonaws.com"
+          instagram="https://instagram.com/qaasim_ahmad?igshid=MzNlNGNkZWQ4Mg=="
         />
         <TeamMemberCard
           img={Sherifdeen}
           name="Sherifdeen Ishola"
           role="Frontend Developer"
           link="/team-member/sherifdeen"
+          facebook="https://www.facebook.com/boogiedml"
+          instagram="https://www.instagram.com/boogiedml"
+          portfolioLink="https://boogiedml.onrender.com/"
+          twitter="https://www.twitter.com/boogiedml"
         />
       </div>
     </div>

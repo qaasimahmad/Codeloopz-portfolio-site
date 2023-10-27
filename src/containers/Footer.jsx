@@ -27,7 +27,7 @@ const Footer = () => {
             <Link to="/contact">Contact Us</Link>
           </div>
           <div className="flex flex-col gap-3">
-            <p>Neal St, London WC2H 9PR United Kingdom</p>
+            <p>8th floor, Edostate secretariat, Edo, Nigeria</p>
             <p>+234 806 079 2402</p>
           </div>
           <div className="flex flex-col gap-3">

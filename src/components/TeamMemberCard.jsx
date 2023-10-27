@@ -5,7 +5,16 @@ import { FaEarthAfrica } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-const TeamMemberCard = ({ img, name, role, link }) => {
+const TeamMemberCard = ({
+  img,
+  name,
+  role,
+  link,
+  facebook,
+  instagram,
+  portfolioLink,
+  twitter,
+}) => {
   const navigate = useNavigate();
 
   return (
@@ -27,10 +36,26 @@ const TeamMemberCard = ({ img, name, role, link }) => {
           {name}
         </h6>
         <div className="flex gap-4 text-base text-black">
-          <BsFacebook className="hover:scale-110 transition-all duration-300" />
-          <FaInstagram className="hover:scale-110 transition-all duration-300" />
-          <FaEarthAfrica className="hover:scale-110 transition-all duration-300" />
-          <BsTwitter className="hover:scale-110 transition-all duration-300" />
+          {facebook && (
+            <a target="_blank" href={facebook}>
+              <BsFacebook className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+            </a>
+          )}
+          {instagram && (
+            <a target="_blank" href={instagram}>
+              <FaInstagram className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+            </a>
+          )}
+          {portfolioLink && (
+            <a target="_blank" href={portfolioLink}>
+              <FaEarthAfrica className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+            </a>
+          )}
+          {twitter && (
+            <a target="_blank" href={twitter}>
+              <BsTwitter className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+            </a>
+          )}
         </div>
       </div>
     </motion.div>

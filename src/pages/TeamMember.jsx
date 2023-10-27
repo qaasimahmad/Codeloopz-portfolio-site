@@ -32,18 +32,26 @@ const TeamMember = ({
             <p>Let's work together!</p>
             <a href={`mailto:${link}`}>{link}</a>
             <div className="flex gap-4 text-base text-black mt-2">
-              <a href={facebook}>
-                <BsFacebook className="hover:scale-110 transition-all duration-300 cursor-pointer" />
-              </a>
-              <a href={instagram}>
-                <FaInstagram className="hover:scale-110 transition-all duration-300 cursor-pointer" />
-              </a>
-              <a href={portfolioLink}>
-                <FaEarthAfrica className="hover:scale-110 transition-all duration-300 cursor-pointer" />
-              </a>
-              <a href={twitter}>
-                <BsTwitter className="hover:scale-110 transition-all duration-300 cursor-pointer" />
-              </a>
+              {facebook && (
+                <a target="_blank" href={facebook}>
+                  <BsFacebook className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+                </a>
+              )}
+              {instagram && (
+                <a target="_blank" href={instagram}>
+                  <FaInstagram className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+                </a>
+              )}
+              {portfolioLink && (
+                <a target="_blank" href={portfolioLink}>
+                  <FaEarthAfrica className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+                </a>
+              )}
+              {twitter && (
+                <a target="_blank" href={twitter}>
+                  <BsTwitter className="hover:scale-110 transition-all duration-300 cursor-pointer" />
+                </a>
+              )}
             </div>
           </div>
         </div>
