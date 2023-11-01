@@ -9,7 +9,6 @@ const NavbarMenu = () => {
 
   const menu = [
     { name: "Home", link: "/" },
-    // { name: "Our Mission", link: "/get-in-touch" },
     { name: "Get in touch", link: "/get-in-touch" },
     { name: "Contact us", link: "/contact" },
   ];

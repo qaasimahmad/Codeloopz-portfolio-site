@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between py-12 px-5 md:px-9 lg:px-12">
+      <nav className="flex items-center justify-between py-12 lg:py-8 px-5 md:px-9 lg:px-12">
         <div className="flex items-center gap-28">
           <span
             className={`logo relative z-[150] group flex items-center font-grotesk text-lg ${

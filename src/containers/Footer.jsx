@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LiaFacebookF } from "react-icons/lia";
-import { BsTwitter } from "react-icons/bs";
+import { RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
             <p>Contact us on socials</p>
             <div className="flex gap-5 text-lg">
               <LiaFacebookF className="hover:scale-110 transition-all duration-300" />
-              <BsTwitter className="hover:scale-110 transition-all duration-300" />
+              <RiTwitterXFill className="hover:scale-110 transition-all duration-300" />
               <FaInstagram className="hover:scale-110 transition-all duration-300" />
             </div>
           </div>
