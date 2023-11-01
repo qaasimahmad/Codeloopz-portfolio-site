@@ -12,12 +12,12 @@ const blogs = [
   {
     what: "About ilustration of the year",
     link: "https://www.nytimes.com/interactive/2022/01/05/multimedia/year-best-illustration-2021.html",
-    img: "https://images.unsplash.com/flagged/photo-1580234759288-fbf3ccdd9a06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzQ5fHxibGFjayUyMGFuZCUyMHdoaXRlJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    img: "https://images.unsplash.com/photo-1636690498207-d7b393423b9a?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGFpfGVufDB8fDB8fHww",
   },
   {
     what: "Learn about emerging technologies",
     link: "https://en.wikipedia.org/wiki/Emerging_technologies#:~:text=Emerging%20technologies%20are%20technologies%20whose,older%20technologies%20finding%20new%20applications.",
-    img: "https://images.unsplash.com/photo-1611409000570-1feccae7aa75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk1fHxibGFjayUyMGFuZCUyMHdoaXRlJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    img: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWl8ZW58MHx8MHx8fDA%3D",
   },
 ];
 
