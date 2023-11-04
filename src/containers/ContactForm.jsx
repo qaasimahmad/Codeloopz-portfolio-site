@@ -18,7 +18,7 @@ const ContactForm = () => {
           className="block w-full resize-none border-[1px] border-t-0 border-black py-6 px-4 md:px-8 outline-none text-sm font-openSans placeholder:text-black"
           name=""
           id=""
-          cols="30"
+          cols="30"    
           rows="10"
           placeholder="Your comment"
         ></textarea>
