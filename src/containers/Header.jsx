@@ -1,8 +1,5 @@
 import React from "react";
-import { BsTwitter } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
-import { LiaFacebookF } from "react-icons/lia";
-import img from "../assets/header.png";
+import img from "../assets/header-image.png";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
@@ -39,9 +36,9 @@ const Header = () => {
         </motion.div>
       </div>
       <motion.div
-        initial={{ opacity: 0.5 }}
-        animate={{ opacity: 1 }}
-        transition={{ type: "tween", duration: 0.5, delay: 0.5 }}
+        initial={{ opacity: 0, rotate: 90 }}
+        animate={{ opacity: 1, rotate: 0 }}
+        transition={{ type: "tween", duration: 1, delay: 0.5 }}
         className="basis-1/2"
       >
         <img src={img} alt="" />
