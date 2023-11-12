@@ -55,7 +55,7 @@ const Toast = ({ isVisible, onClose }) => {
               Successful
             </h5>
             <p className=" font-nunito text-sm">
-              Your message has been received
+              Well received!. We'll get in touch ASAP
             </p>
           </div>
         </div>
